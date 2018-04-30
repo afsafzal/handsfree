@@ -14,37 +14,20 @@ $install_command ia32-libs*
 ################################################################################
 echo "building tools & librarys"
 
-$install_command vim-common vim-doc vim-gtk vim-scripts
+$install_command vim-common vim-doc vim-gtk vim-scripts build-essential bin86 kernel-package g++ gcc libstdc++5 gcc-4.6 g++-4.6 gcc-4.4 g++-4.4
 
-$install_command build-essential
-$install_command bin86 kernel-package 
-$install_command g++ gcc
-$install_command libstdc++5
-$install_command gcc-4.6 g++-4.6 gcc-4.4 g++-4.4
+$install_command exuberant-ctags cscope rcs manpages-dev glibc-doc manpages-posix manpages-posix-dev
 
-$install_command exuberant-ctags cscope
-$install_command rcs
-$install_command manpages-dev glibc-doc
-$install_command manpages-posix manpages-posix-dev
-$install_command ack-grep
-$install_command cmake cmake-qt-gui
-$install_command git subversion mercurial yum openssh-server openssh-client
+$install_command ack-grep cmake cmake-qt-gui git subversion mercurial yum openssh-server openssh-client
 
-$install_command libncurses5 libncurses5-dev
-$install_command mesa-utils libglu1-mesa freeglut3 freeglut3-dev 
-$install_command libxmu-dev libxmu-headers
-$install_command libcairo2 libcairo2-dev python-cairo
+$install_command libncurses5 libncurses5-dev mesa-utils libglu1-mesa freeglut3 freeglut3-dev libxmu-dev libxmu-headers libcairo2 libcairo2-dev python-cairo
 
 # gtk
 $install_command libgtk2.0-dev
 
 # install qt4
-$install_command libqt4-core libqt4-dev libqt4-gui qt4-doc qt4-designer 
-$install_command libqt4-opengl-dev libqtwebkit-dev
-$install_command libqt4-qt3support libqwtplot3d-qt4-0 libqwtplot3d-qt4-dev qt4-dev-tools qt4-qtconfig libqt4-opengl-dev
-$install_command qtcreator
-$install_command python-qt4 python-qt4-doc python-qt4-gl
-$install_command libqglviewer-dev libqglviewer2
+$install_command libqt4-core libqt4-dev libqt4-gui qt4-doc qt4-designer qtcreator
+$install_command libqt4-opengl-dev libqtwebkit-dev libqt4-qt3support libqwtplot3d-qt4-0 libqwtplot3d-qt4-dev qt4-dev-tools qt4-qtconfig libqt4-opengl-dev python-qt4 python-qt4-doc python-qt4-gl libqglviewer-dev libqglviewer2
 
 # install qt5
 $install_command qt5-default
@@ -61,7 +44,6 @@ $install_command libsuitesparse-dev
 
 # other
 $install_command lib3ds-dev
-
 $install_command libgtk2.0-dev
 $install_command libgtkglext1 libgtkglext1-dev
 $install_command libgstreamer1.0-dev
