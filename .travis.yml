@@ -4,14 +4,9 @@ compiler:
   - gcc
 dist: trusty
 sudo: required
-#before_install:
-#- sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list' 
-#- sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 0xB01FA116
-#- sudo apt-get update -qq
-#- sudo apt-get install -qq ros-indigo-desktop ros-indigo-catkin python-catkin-pkg
 install:
 - bash Documentation/script/ros_indigo_base.sh
-- bash Documentation/script/ros_indigo_build.sh
+- sudo apt-get install -qq ros-indigo-ros-controllers
 before_script:
 - source /opt/ros/indigo/setup.bash
 - mkdir -p ~/catkin_ws/src

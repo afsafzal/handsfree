@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/afsafzal/handsfree.svg?branch=Indigo)](https://travis-ci.org/afsafzal/handsfree)
+
 # HANDS FREE ROS DEMO 
 
 ### Environment ###
