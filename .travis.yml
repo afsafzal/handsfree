@@ -11,7 +11,7 @@ sudo: required
 #- sudo apt-get install -qq ros-indigo-desktop ros-indigo-catkin python-catkin-pkg
 install:
 - bash Documentation/script/ros_indigo_base.sh
-- bash Documentation/script/ros_indigo_ext.sh
+- bash Documentation/script/ros_indigo_build.sh
 before_script:
 - source /opt/ros/indigo/setup.bash
 - mkdir -p ~/catkin_ws/src
